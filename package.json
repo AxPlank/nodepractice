@@ -1,0 +1,22 @@
+{
+  "name": "practicenode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxPlank/nodepractice.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Papus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxPlank/nodepractice/issues"
+  },
+  "homepage": "https://github.com/AxPlank/nodepractice#readme"
+}
