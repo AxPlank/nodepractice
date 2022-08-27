@@ -3,16 +3,13 @@
 https://www.acmicpc.net/problem/3003
 */
 
-const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+const fs = require("fs");
+const arr = fs.readFileSync("inputt.txt").toString().split(' '); // 특정 파일의 내용을 읽어와 진행
 
-rl.on("line", (line) => {
-    const chess = [1, 1, 2, 2, 2, 8];
-    const piece = line.split(' ').map(Number);
-    const diff = chess - piece;
-    console.log(111);
-    rl.close();
-});
+standard = [1, 1, 2, 2, 2, 8];
+
+for (i = 0; i < 6; i++) {
+    standard[i] = standard[i] - Number(arr[i]);
+}
+
+console.log(standard.join(' '));
