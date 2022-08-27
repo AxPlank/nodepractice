@@ -4,7 +4,7 @@ https://www.acmicpc.net/problem/3003
 */
 
 const fs = require("fs");
-const arr = fs.readFileSync("inputt.txt").toString().split(' '); // 특정 파일의 내용을 읽어와 진행
+const arr = fs.readFileSync("../inputt.txt").toString().split(' '); // 특정 파일의 내용을 읽어와 진행
 
 standard = [1, 1, 2, 2, 2, 8];
 

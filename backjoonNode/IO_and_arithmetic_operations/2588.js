@@ -4,7 +4,7 @@ https://www.acmicpc.net/problem/2588
 */
 
 const fs = require("fs");
-let [A, B] = fs.readFileSync("inputt.txt").toString().trim().split('\n');
+let [A, B] = fs.readFileSync("../inputt.txt").toString().trim().split('\n');
 
 A = Number(A);
 let B_num = B.split('').map((e) => {

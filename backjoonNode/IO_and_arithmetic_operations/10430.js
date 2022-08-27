@@ -4,7 +4,7 @@ https://www.acmicpc.net/problem/10430
 */
 
 const fs = require("fs");
-const [A, B, C] = fs.readFileSync("inputt.txt").toString().trim().split(' ').map((e) => {return Number(e);});
+const [A, B, C] = fs.readFileSync("../inputt.txt").toString().trim().split(' ').map((e) => {return Number(e);});
 
 const ret1 = (A + B) % C;
 const ret2 = ((A%C) + (B%C)) % C;
