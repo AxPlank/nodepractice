@@ -11,5 +11,5 @@ if (a === b && b === c) {
 } else if (a === b || b === c) {
     console.log(b * 100 + 1000);
 } else {
-    console.log(Math.max(...[a, b, c]) * 100);
+    console.log(c * 100);
 }
