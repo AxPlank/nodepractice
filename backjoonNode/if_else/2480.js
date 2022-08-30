@@ -4,5 +4,12 @@ https://www.acmicpc.net/problem/2480
 */
 
 const fs = require("fs");
-const score = Number(fs.readFileSync("../inputt.txt").toString().trim()); // 특정 파일의 내용을 읽어와 진행
+const [a, b, c] = fs.readFileSync("../inputt.txt").toString().trim().split(' ').map(Number).sort();
 
+if (a === b && b === c) {
+    console.log(a * 1000 + 10000);
+} else if (a === b || b === c) {
+    console.log(b * 100 + 1000);
+} else {
+    console.log(Math.max(...[a, b, c]) * 100);
+}
