@@ -11,3 +11,8 @@ let input = fs.readFileSync("../inputt.txt").toString().trim().split('\n')
 
 let arr = input[1];
 console.log(`${Math.min(...arr)} ${Math.max(...arr)}`);
+
+/*
+Math.max(): 주어진 값들 중 최댓값 출력
+Math.min(): 주어진 값들 중 최솟값 출력
+*/

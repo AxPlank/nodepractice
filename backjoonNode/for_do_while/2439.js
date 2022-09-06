@@ -16,6 +16,6 @@ for (var i = 1; i <= input; i++) {
 console.log(output);
 
 /*
-padStart: 문자열 왼쪽 공백에 남는 공간만큼의 지정된 문자열 삽입
+padStart(number, pattern): num 길이로 지정된 문자열 왼쪽 공백에 값을 넣고, 남는 공간에는 지정된 패턴을 삽입
 padEnd: 문자열 오른쪽에서의 padStart
 */

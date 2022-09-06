@@ -10,7 +10,7 @@ var input = Number(fs.readFileSync("../inputt.txt").toString());
 for (var i = 1; i <= input; i++) {
     var output = String();
     for (var j = 1; j <= i; j++) {
-        output += '*'
+        output += '*';
     }
     console.log(output);
 }

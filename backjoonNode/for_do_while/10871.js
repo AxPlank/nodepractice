@@ -12,7 +12,7 @@ var input = fs.readFileSync("../inputt.txt").toString().trim().split('\n')
 // Sol 1
 var output = Array();
 var X = input[0][1];
-for (var i = 0; i < input[1].length; i++) {
+for (var i = 0; i < input[0][0]; i++) {
     if (input[1][i] < X) {
         output.push(input[1][i]);
     }
@@ -23,7 +23,7 @@ console.log(...output);
 // So1 2
 var output = String();
 var X = input[0][1];
-for (var i = 0; i < input[1].length; i++) {
+for (var i = 0; i < input[0][0]; i++) {
     if (input[1][i] < X) {
         output += input[1][i] + ' ';
     }

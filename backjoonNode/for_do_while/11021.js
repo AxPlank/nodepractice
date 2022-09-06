@@ -28,3 +28,5 @@ var output = String();
 for (var i = 1; i < 1 + input[0][0]; i++) {
     console.log(`Case #${i}: ${input[i][0] + input[i][1]}`);
 }
+
+// ★ console.log를 이용하는 것 보다, output를 이용하는 것이 메모리 사용에 있어 더 효율적일 수 있다.

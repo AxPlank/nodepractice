@@ -14,4 +14,4 @@ for (let i = 2; i < 2 + input[1][0]; i++) {
     sum += input[i][0] * input[i][1];
 }
 
-sum == input[0][0]? console.log("Yes"): console.log("No");
+sum == input[0][0]? console.log("Yes"): console.log("No"); // 계산값과 영수증 값의 일치여부에 따라 주어진 문구 출력

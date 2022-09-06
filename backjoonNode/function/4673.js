@@ -16,7 +16,7 @@ function getSN(n, arr) {
     }
 
     console.log(sn);
-    if (sn <= 10000) {
+    if (sn <= 10000) { // 셀프 넘버가 아니라면, 해당 인덱스에 위치한 값을 false로 변환함.
         arr[sn] = false;
     }
 
