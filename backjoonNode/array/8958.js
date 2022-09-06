@@ -6,7 +6,7 @@ https://www.acmicpc.net/problem/8958
 const fs = require('fs');
 let input = fs.readFileSync("../inputt.txt").toString().trim().split('\n');
 
-T = Number(input[0][0]);
+T = Number(input[0]);
 for (let i = 1; i < T + 1; i++) {
     let score = 0;
     let sumScore = 0;
