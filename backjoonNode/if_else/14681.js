@@ -4,7 +4,7 @@ https://www.acmicpc.net/problem/14681
 */
 
 /*
-permission denied인 경우, fs 대신 readline 호출해 사용!
+permission denied인 경우, fs 대신 readline 호출해 사용! 이때 백준에서는 EACCES 에러 발생
 */
 const readline = require("readline");
 const rl = readline.createInterface({
