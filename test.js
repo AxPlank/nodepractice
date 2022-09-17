@@ -1,5 +1,16 @@
-const arr1 = [true, false, true, true, false];
+let [a, b] = [1, 1];
 
-for (let i = 1; i < arr1.length; i += 4) {
-    console.log(arr1[i])
+increase(1, 1);
+
+function increase(a, b) {
+    if (a === b); {
+        console.log(1);
+        return ;
+    }
+
+    console.log(a);
+
+    console.log(1);
+
+    increase(a, b)
 }
