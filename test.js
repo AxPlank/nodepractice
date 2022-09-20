@@ -1,16 +1,5 @@
-let [a, b] = [1, 1];
+var i = 'd\n';
 
-increase(1, 1);
 
-function increase(a, b) {
-    if (a === b); {
-        console.log(1);
-        return ;
-    }
-
-    console.log(a);
-
-    console.log(1);
-
-    increase(a, b)
-}
+console.log(i.substring(0,1));
+console.log(i);
