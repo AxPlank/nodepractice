@@ -1,5 +1,6 @@
-var i = 'd\n';
+const sett = new Set();
 
+sett.add(-9);
+console.log(sett.size);
 
-console.log(i.substring(0,1));
-console.log(i);
+console.log(...sett);
