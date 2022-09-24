@@ -1,6 +1,3 @@
-const sett = new Set();
+let str1 = '*';
 
-sett.add(-9);
-console.log(sett.size);
-
-console.log(...sett);
+console.log(str1 + " ".repeat(3) + str1);
