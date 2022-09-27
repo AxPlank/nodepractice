@@ -1,3 +1,4 @@
-let str1 = '*';
+let jsonn = {};
+const arr = ['a', 'b'];
 
-console.log(str1 + " ".repeat(3) + str1);
+jsonn;
