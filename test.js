@@ -1,4 +1,1 @@
-let jsonn = {};
-const arr = ['a', 'b'];
-
-jsonn;
+console.log(Math.sqrt(2));
