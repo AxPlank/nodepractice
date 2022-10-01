@@ -8,18 +8,18 @@ const input = fs.readFileSync("../inputt.txt").toString().trim().split('\r\n').m
 
 let T = input[0];
 let casee = input.slice(1, input.length);
-let output = new String();
+let output = [];
 
 for (let i = 0; i < T; i++) {
     for (let j = Math.floor(casee[i]/2); j > 1; j--) {
         if (isPrime(j) && isPrime(casee[i]-j)) {
-            output += `${j} ${casee[i]-j}` + '\n';
+            output.push(`${j} ${casee[i]-j}`);
             break;
         }
     }
 }
 
-console.log(output);
+console.log(output.join('\n'));
 
 function isPrime(n) {
     for (let i = 2; i < Math.floor(Math.sqrt(n)+1); i++) {

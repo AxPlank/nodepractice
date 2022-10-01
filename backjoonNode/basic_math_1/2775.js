@@ -14,15 +14,14 @@ let output = new Array();
 for (let i = 0; i < T; i++) {
     [k, n] = [casee[i*2], casee[i*2+1]];
     people = getComb(k, n);
-    console.log(typeof getComb(k,n));
 
     output.push(people);
 }
 
-function getComb(k, n) {
+function getComb(k, n) { // k층의 n호에 사는 주민은 (n+k k+1)^T의 조합 패턴을 보이고 있음
     let [comb_n, comb_r] = [n+k, k+1]
 
-    return parseInt(getFact(comb_n) / (getFact(comb_r) * getFact(comb_n-comb_r)));
+    return parseInt(getFact(comb_n) / (getFact(comb_r) * getFact(comb_n-comb_r))); // 정수가 아닌 실수가 리턴되는 경우가 있어 parseInt를 이용해 정수만 추출
 }
 
 function getFact(n) {

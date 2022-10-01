@@ -10,6 +10,12 @@ let input = fs.readFileSync("../inputt.txt").toString().trim();
 
 let output = 0;
 
+for (let i = 0; i < input.length; i++) {
+    output += getTime(input[i]);
+}
+
+console.log(output);
+
 function getTime(alphabet) {
     switch (alphabet) {
         case 'A':
@@ -49,12 +55,6 @@ function getTime(alphabet) {
     }
 }
 
-for (let i = 0; i < input.length; i++) {
-    output += getTime(input[i]);
-}
-
-console.log(output);
-
 // Sol 2: json 이용
 const dial = {
     "ABC": 3, "DEF": 4, "GHI": 5, "JKL": 6,
@@ -66,7 +66,7 @@ output = 0;
 
 for (let i = 0; i < input.length; i++) {
     for (let j = 0; j < dial_keys.length; j++) {
-        if (dial_keys[j].includes(input[i])) {
+        if (dial_keys[j].includes(input[i])) { // 해당 알파벳이 들어있는 key에 대응하는 value만큼 시간 추가
             output += dial[dial_keys[i]];
             break;
         }
@@ -82,7 +82,7 @@ output = 0;
 for (let i = 0; i < input.length; i++) {
     for (let j = 0; j < dialArr.length; j++) {
         if (dialArr[j].includes(input[i])) {
-            output += dialArr.indexOf(dialArr[j]) + 3;
+            output += dialArr.indexOf(dialArr[j]) + 3; // 다이얼 1칸 당 1초 소요하므로, 제일 먼저 등장하는 ABC는 3초 소요됨
             break;
         }
     }

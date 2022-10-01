@@ -1,1 +1,4 @@
-console.log(Math.sqrt(2));
+const str = '';
+const arr = str.split(' ');
+
+console.log(arr.toString() === '');

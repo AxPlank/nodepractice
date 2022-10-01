@@ -7,7 +7,7 @@ const fs = require('fs');
 
 let [A, B, C] = fs.readFileSync("../inputt.txt").toString().trim().split(' ').map(Number);
 
-if (B >= C) {
+if (B >= C) { // 가변 비용이 가격보다 비싼 경우
     console.log(-1);
 } else {
     console.log(Math.floor(A/(C-B)) + 1);

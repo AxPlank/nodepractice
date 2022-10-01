@@ -11,7 +11,7 @@ let input = fs.readFileSync("../inputt.txt").toString().trim().split(' ')
         return Number(e.split('').reverse().join(''));
     });
 
-input[0] > input[1]? console.log(input[0]) : console.log(input[1]);
+console.log(Math.max(...input));
 
 // Sol 2
 input = fs.readFileSync("../inputt.txt").toString().trim().split(' ')
@@ -19,4 +19,8 @@ input = fs.readFileSync("../inputt.txt").toString().trim().split(' ')
         return Number([e[0], e[1], e[e.length-1]] = [e[e.length-1], e[1], e[0]].join(''));
     });
 
-input[0] > input[1]? console.log(input[0]) : console.log(input[1]);
+console.log(Math.max(...input));
+
+/**
+ * reverse(): 배열 순서 뒤집음
+ */

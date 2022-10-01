@@ -9,3 +9,15 @@ let [A, B, V] = fs.readFileSync("../inputt.txt").toString().trim().split(' ').ma
 
 let days = Math.ceil(V - B / A - B);
 console.log(days);
+
+/**
+ * 올라가는 데 걸리는 일 수가 n이라고 할 때, 식을 세우면
+ * 
+ * nA - B(n - 1) > V
+ * 
+ * 가 될 것임. 이것을 n에 대해 정리하면,
+ * 
+ * n > (V - B) / (A - B)
+ * 
+ * 이므로, 우변의 값을 올림 처리한 값이 n의 최솟값이 될 것임.
+ */
