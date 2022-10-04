@@ -1,4 +1,4 @@
-const str = '';
-const arr = str.split(' ');
+let arr = [2, 4, 5, 6, 7];
 
-console.log(arr.toString() === '');
+const sett = new Set(arr);
+console.log(sett);

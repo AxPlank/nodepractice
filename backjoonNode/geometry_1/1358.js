@@ -26,13 +26,13 @@ function isPlaced(arr) {
         if (x >= X && x <= X + W) {
             return true;
         } else {
-            if (getDistance(x, y) === R) {
+            if (getDistance(x, y) <= R) {
                 return true;
             }
+
+            return false;
         }
     }
-
-    return false;
 }
 
 function getDistance(x, y) {
@@ -44,9 +44,7 @@ function getDistance(x, y) {
         d = Math.sqrt(Math.pow(rx - x, 2) + Math.pow(ry - y, 2));
 
         return d;
-    }
-
-    if (x < X) {
+    } else {
         rx = X + W;
         d = Math.sqrt(Math.pow(rx - x, 2) + Math.pow(ry - y, 2));
 
