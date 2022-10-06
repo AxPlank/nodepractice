@@ -11,7 +11,7 @@ console.log(Math.pow(2, N) - 1);
 Hanoi(N, 1, 3);
 console.log(Output.join('\n'));
 
-function Hanoi(N, inn, out) {
+function Hanoi(N, out, inn) {
     if (N === 1) {
         Output.push(`${out} ${inn}`);
         return;
